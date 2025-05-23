@@ -1,0 +1,122 @@
+.home-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .file-input {
+    margin: 15px 0;
+  }
+  
+  .btn {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .upload-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .cancel-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #da190b;
+  }
+  
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .image-card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .image-preview {
+    max-width: 100%;
+    max-height: 130px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    object-fit: contain;
+  }
+  
+  .filename {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    word-break: break-all;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    margin-right: 5px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .replace-btn {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .replace-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .replace-info {
+    font-style: italic;
+    margin: 10px 0;
+    color: #555;
+  }
+
+  .preview-container {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .preview-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+  .preview-image {
+    max-width: 80%;
+    max-height: 80%;
+    border: 5px solid white;
+    border-radius: 10px;
+    z-index: 1001;
+  }
+  .close-btn {
+    margin-top: 20px;
+    z-index: 1001;
+  }
+  
